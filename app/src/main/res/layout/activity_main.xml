@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fon"
+        android:layout_width="378dp"
+        android:layout_height="187dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="IT ACADEMY COURSES"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fon" />
+
+    <TextView
+        android:id="@+id/trainers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Trainers"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/courses"
+        app:layout_constraintTop_toBottomOf="@+id/courses" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Timur Amanov"
+        app:layout_constraintStart_toStartOf="@+id/courses"
+        app:layout_constraintTop_toBottomOf="@+id/trainers" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="63dp"
+        android:text="Umar Sagumbaev"
+
+        app:layout_constraintStart_toEndOf="@+id/name1"
+        app:layout_constraintTop_toBottomOf="@+id/courses" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="63dp"
+        android:text="Edzen Oichiev"
+        app:layout_constraintStart_toEndOf="@+id/name2"
+        app:layout_constraintTop_toBottomOf="@+id/courses" />
+
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Abdukadur Musa uulu"
+        app:layout_constraintStart_toStartOf="@+id/courses"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <ImageView
+        android:id="@+id/android"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/androidText"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/fon"
+        app:srcCompat="@drawable/android" />
+
+    <TextView
+        android:id="@+id/androidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Разработка"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/frontEnd"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/android" />
+
+    <ImageView
+        android:id="@+id/frontEnd"
+        android:layout_width="73dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/frontEndText"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/androidText"
+        app:srcCompat="@drawable/javascript" />
+
+    <TextView
+        android:id="@+id/frontEndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front-end азработка"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/backEnd"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/frontEnd" />
+
+    <ImageView
+        android:id="@+id/backEnd"
+        android:layout_width="76dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/backEndText"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/frontEndText"
+        app:srcCompat="@drawable/python" />
+
+    <TextView
+        android:id="@+id/backEndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back-end Разработка"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fon"
+        app:layout_constraintTop_toBottomOf="@+id/backEnd" />
+
+    <TextView
+        android:id="@+id/androidInfo"
+        android:layout_width="185dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="15dp"
+        android:text="Android Разработка - это создание приложений для портотивных устройств"
+        app:layout_constraintBottom_toTopOf="@+id/androidButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/android"
+        app:layout_constraintTop_toBottomOf="@+id/fon" />
+
+    <TextView
+        android:id="@+id/backEndInfo"
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:text="Phyton - считается высокоуровневым языком программирования"
+        app:layout_constraintBottom_toTopOf="@+id/backEndButtton"
+        app:layout_constraintStart_toStartOf="@+id/androidInfo"
+        app:layout_constraintTop_toBottomOf="@+id/frontEndButton" />
+
+    <TextView
+        android:id="@+id/frontEndInfo"
+        android:layout_width="181dp"
+        android:layout_height="63dp"
+        android:text="Front-end Разработка - это создание клиентской стороны сайта"
+        app:layout_constraintBottom_toTopOf="@+id/frontEndButton"
+        app:layout_constraintStart_toStartOf="@+id/androidInfo"
+        app:layout_constraintTop_toBottomOf="@+id/androidButton" />
+
+    <Button
+        android:id="@+id/frontEndButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/transparent"
+        android:text="@string/buttonCourses"
+        app:layout_constraintBottom_toTopOf="@+id/backEndInfo"
+        app:layout_constraintStart_toStartOf="@+id/androidButton"
+        app:layout_constraintTop_toBottomOf="@+id/frontEndInfo" />
+
+    <Button
+        android:id="@+id/backEndButtton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/transparent"
+        android:text="@string/buttonCourses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/androidButton"
+        app:layout_constraintTop_toBottomOf="@+id/backEndInfo" />
+
+    <Button
+        android:id="@+id/androidButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="@string/buttonCourses"
+        android:backgroundTint="@color/transparent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/frontEndInfo"
+        app:layout_constraintStart_toEndOf="@+id/androidText"
+        app:layout_constraintTop_toBottomOf="@+id/androidInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
